@@ -3,7 +3,8 @@ HEADER=include
 
 FUNCTIONS[0]=strcpy
 FUNCTIONS[1]=strdup
-FUNCTIONS[2]=strlen
+FUNCTIONS[2]=strjoin
+FUNCTIONS[3]=strlen
 
 function execute {
 

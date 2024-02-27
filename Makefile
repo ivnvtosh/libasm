@@ -18,6 +18,7 @@ HEADER		=	include/libasm.h
 
 FUNCTIONS	=	strcpy.s				\
 				strdup.s				\
+				strjoin.s				\
 				strlen.s				\
 
 SOURCE		=	$(addprefix source/, $(FUNCTIONS))
