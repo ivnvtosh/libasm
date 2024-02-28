@@ -2,6 +2,7 @@ LIBASM=library/libasm.a
 HEADER=include
 
 FUNCTIONS=(
+	strchr
 	strcmp
 	strcpy
 	strdup

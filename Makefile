@@ -16,7 +16,8 @@ RM			=	rm -f
 
 HEADER		=	include/libasm.h
 
-FUNCTIONS	=	strcmp.s				\
+FUNCTIONS	=	strchr.s				\
+				strcmp.s				\
 				strcpy.s				\
 				strdup.s				\
 				strjoin.s				\
