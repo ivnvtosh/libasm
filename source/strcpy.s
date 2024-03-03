@@ -6,7 +6,6 @@ _strcpy:
 	sub			$8, 				%rsp
 	push		%rbp
 	mov			$0,					%rbx
-	jmp			_loop
 _loop:
 	movzb		(%rdi, %rbx), 		%rbp
 	movb		%bpl, 				(%rsi, %rbx)

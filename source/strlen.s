@@ -4,7 +4,6 @@
 _strlen:
 	push		%rbp
 	mov			$0,					%rax
-	jmp			_loop
 _loop:
 	movzb		(%rdi, %rax),		%rbp
 	test		%rbp,				%rbp
