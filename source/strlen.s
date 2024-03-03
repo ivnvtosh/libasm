@@ -7,7 +7,7 @@ _strlen:
 	jmp			_loop
 _loop:
 	movzb		(%rdi, %rax),		%rbp
-	cmp			$0,					%rbp
+	test		%rbp,				%rbp
 	je			_end
 	add			$1,					%rax
 	jmp			_loop

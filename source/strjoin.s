@@ -23,7 +23,7 @@ _strjoin:
 	mov			$0,					%rax
 	call		malloc
 	mov			%rax,				%r11
-	cmp			$0,					%rax
+	test		%rax,				%rax
 	je			_end
 	mov			%rbp,				%rdi
 	mov			%r11,				%rsi

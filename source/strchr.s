@@ -9,7 +9,7 @@ _loop:
 	movzb		(%rbx, 1),			%rax
 	cmp			%rsi,				%rax
 	je			_find
-	cmp			$0,					%rbx
+	test		%rbx,				%rbx
 	je			_end
 	add			$1,					%rbx
 	jmp			_loop

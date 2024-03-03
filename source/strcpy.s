@@ -10,7 +10,7 @@ _strcpy:
 _loop:
 	movzb		(%rdi, %rbx), 		%rbp
 	movb		%bpl, 				(%rsi, %rbx)
-	cmp			$0,					%rbp
+	test		%rbp,				%rbp
 	je			_end
 	add			$1,					%rbx
 	jmp			_loop

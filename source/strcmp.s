@@ -11,7 +11,7 @@ _loop:
 	movzb		(%rsi, %rax), 		%rbp
 	cmp			%rbx,				%rbp
 	jne			_end
-	cmp			$0,					%rbp
+	test		%rbp,				%rbp
 	je			_end
 	add			$1,					%rax
 	jmp			_loop
