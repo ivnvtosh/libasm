@@ -11,7 +11,7 @@ _loop:
 	je			_find
 	test		%rbx,				%rbx
 	je			_end
-	add			$1,					%rbx
+	inc			%rbx
 	jmp			_loop
 _find:
 	mov			%rbx,				%rax

@@ -11,7 +11,7 @@ _loop:
 	movb		%bpl, 				(%rsi, %rbx)
 	test		%rbp,				%rbp
 	je			_end
-	add			$1,					%rbx
+	inc			%rbx
 	jmp			_loop
 _end:
 	mov			%rsi,				%rax

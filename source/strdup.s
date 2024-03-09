@@ -6,7 +6,7 @@ _strdup:
 	sub			$8,					%rsp
 	push		%rdi
 	call		_strlen
-	add			$1,					%rax
+	inc			%rax
 	mov			%rax,				%rdi
 	mov			$0,					%rax
 	call		malloc

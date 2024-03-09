@@ -19,7 +19,7 @@ _strjoin:
 	call		_strlen
 	mov			%rax,				%rdi
 	add			%r12,				%rdi
-	add			$1,					%rdi
+	inc			%rdi
 	mov			$0,					%rax
 	call		malloc
 	mov			%rax,				%r11

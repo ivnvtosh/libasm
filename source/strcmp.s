@@ -13,7 +13,7 @@ _loop:
 	jne			_end
 	test		%rbp,				%rbp
 	je			_end
-	add			$1,					%rax
+	inc			%rax
 	jmp			_loop
 _end:
 	mov			%rbx,				%rax

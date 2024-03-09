@@ -8,7 +8,7 @@ _loop:
 	movzb		(%rdi, %rax),		%rbp
 	test		%rbp,				%rbp
 	je			_end
-	add			$1,					%rax
+	inc			%rax
 	jmp			_loop
 _end:
 	pop			%rbp
