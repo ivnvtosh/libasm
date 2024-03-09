@@ -8,12 +8,12 @@ _strdup:
 	call		_strlen
 	inc			%rax
 	mov			%rax,				%rdi
-	mov			$0,					%rax
+	xor			%rax,				%rax
 	call		malloc
 	pop			%rdi
 	add			$8,					%rsp
 	mov			%rax,				%rsi
-	mov			$0,					%rax
+	xor			%rax,				%rax
 	call		_strcpy
 	pop			%rbp
 	ret

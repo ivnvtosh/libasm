@@ -3,7 +3,7 @@
 	.type		_strlen,			@function
 _strlen:
 	push		%rbp
-	mov			$0,					%rax
+	xor			%rax,				%rax
 _loop:
 	movzb		(%rdi, %rax),		%rbp
 	test		%rbp,				%rbp

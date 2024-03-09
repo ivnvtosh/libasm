@@ -5,7 +5,7 @@ _strcmp:
 	push		%rbx
 	sub			$8, 				%rsp
 	push		%rbp
-	mov			$0,					%rax
+	xor			%rax,				%rax
 _loop:
 	movzb		(%rdi, %rax), 		%rbx
 	movzb		(%rsi, %rax), 		%rbp

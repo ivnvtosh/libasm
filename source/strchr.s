@@ -4,7 +4,7 @@
 _strchr:
 	push		%rbx
 	mov 		%rdi,				%rbx
-	mov			$0,					%rax
+	xor			%rax,				%rax
 _loop:
 	movzb		(%rbx, 1),			%rax
 	cmp			%rsi,				%rax

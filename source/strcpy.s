@@ -5,7 +5,7 @@ _strcpy:
 	push		%rbx
 	sub			$8, 				%rsp
 	push		%rbp
-	mov			$0,					%rbx
+	xor			%rbx,				%rbx
 _loop:
 	movzb		(%rdi, %rbx), 		%rbp
 	movb		%bpl, 				(%rsi, %rbx)

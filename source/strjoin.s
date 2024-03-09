@@ -11,28 +11,28 @@ _strjoin:
 	push		%r11
 	mov			%rdi,				%rbp
 	mov			%rsi,				%rbx
-	mov			$0,					%rax
+	xor			%rax,				%rax
 	call		_strlen
 	mov			%rax,				%r12
 	mov			%rbx,				%rdi
-	mov			$0,					%rax
+	xor			%rax,				%rax
 	call		_strlen
 	mov			%rax,				%rdi
 	add			%r12,				%rdi
 	inc			%rdi
-	mov			$0,					%rax
+	xor			%rax,				%rax
 	call		malloc
 	mov			%rax,				%r11
 	test		%rax,				%rax
 	je			_end
 	mov			%rbp,				%rdi
 	mov			%r11,				%rsi
-	mov			$0,					%rax
+	xor			%rax,				%rax
 	call		_strcpy
 	mov			%rbx,				%rdi
 	mov			%r11,				%rsi
 	add			%r12,				%rsi
-	mov			$0,					%rax
+	xor			%rax,				%rax
 	call		_strcpy
 	mov			%r11,				%rax
 _end:
